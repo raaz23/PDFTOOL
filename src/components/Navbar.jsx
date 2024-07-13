@@ -27,14 +27,14 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="hidden lg:flex justify-center space-x-12 items-center">
-            <a href="#" className="py-2 px-3 border rounded-md flex justify-even hover:shadow-md transition-all">
+            <a href="#" className="py-2 px-3 border rounded-md flex justify-even hover:shadow-md transition-all tracking-wider">
             Sign In
             </a>
             <a
               href="#"
-              className=" border-2 py-2 px-3 rounded-md hover:shadow-lg transition-all bg-[#e5473e]"
+              className=" border-2 py-2 px-3 rounded-md bg-primaryColor transition-all hover:bg-secondaryColor text-textColor tracking-wider"
             >
-           Create an account
+           Try For Free
             </a>
           </div>
           <div className="lg:hidden md:flex flex-col justify-end">
@@ -58,7 +58,7 @@ const Navbar = () => {
               </a>
               <a
                 href="#"
-                className="py-2 px-3 rounded-md bg-gradient-to-r from-red-200 to-red-600"
+                className="py-2 px-3 rounded-md bg-gradient-to-r from-red-400 to-red-600 "
               >
                 Create an account
               </a>

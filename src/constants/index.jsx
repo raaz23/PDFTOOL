@@ -6,15 +6,15 @@ import {
   Image,
   FastForward,
   FilePlus,
-  PrinterCheck
+  PrinterCheck,
 } from "lucide-react";
 
-import user1 from "../assets/profile-pictures/user1.avif";
-import user2 from "../assets/profile-pictures/user2.avif";
+import user1 from "../assets/profile-pictures/user1.jpg";
+import user2 from "../assets/profile-pictures/user2.jpg";
 import user3 from "../assets/profile-pictures/user3.avif";
 import user4 from "../assets/profile-pictures/user4.avif";
 import user5 from "../assets/profile-pictures/user5.jpg";
-import user6 from "../assets/profile-pictures/user6.jpeg";
+import user6 from "../assets/profile-pictures/user6.jpg";
 
 
 export const navItems = [
@@ -27,38 +27,44 @@ export const navItems = [
 
 export const testimonials = [
   {
-    user: "Rahul Gupta",
+    user: "DIRECTOR - Rahul Gupta",
     company: "TechSavvy India",
+    starNumber:4,
     image: user1,
     text: "I am extremely impressed with PDFTOOL's services. The platform's intuitive design and seamless functionality make it a must-have for anyone dealing with PDF files.",
   },
   {
-    user: "Nitin Sharma",
+    user: "UI/UX DESIGNER - Anjali Sharma",
     company: "Digital Bharat",
+    starNumber:2,
     image: user2,
     text: "PDFTOOL has been a game-changer for us. It simplifies complex tasks like merging and converting PDFs into quick, easy steps. Highly recommended and i suggest to use it!",
   },
   {
-    user: "Sanjay Patel",
+    user: "CTO - Sanjay Patel",
     company: "TechGenius Solutions",
+    starNumber:5,
     image: user3,
     text: "Working with PDFTOOL has been a delight. Their commitment to quality and user-friendly interface sets them apart. They truly understand the needs of Indian users.",
   },
   {
-    user: "Anish Verma",
+    user: "SOFTWARE ENG - Anish Verma",
     company: "Innovate India Tech",
+    starNumber:2,
     image: user4,
     text: "PDFTOOL has revolutionized how we manage documents. The tools are robust, efficient, and perfect for businesses looking to streamline their document workflows.",
   },
   {
-    user: "Amit Kumar",
+    user: "CEO - Amit Kumar",
     company: "SmartSoft India",
+    starNumber:3,
     image: user5,
-    text: "I've found PDFTOOL incredibly helpful in my daily tasks. Whether it's compressing PDFs or extracting pages, it's a versatile tool that meets all our document needs. A great platform to easily do pdf task.",
+    text: "I've found PDFTOOL incredibly helpful in my daily tasks. Whether it's compressing PDFs or extracting pages, it's a versatile tool that meets all our document needs.",
   },
   {
-    user: "Subham Singh",
+    user: "HR - Priyanka Singh",
     company: "TechInnovate Labs",
+    starNumber:4,
     image: user6,
     text: "The team behind PDFTOOL deserves applause for their dedication to improving document management. Their tools are indispensable for professionals across India.",
   },

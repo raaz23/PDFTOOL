@@ -1,4 +1,4 @@
-import { Archive, Droplet, Edit,  FilePlus, FileText, FileTextIcon, Globe,  HashIcon, Image, Layers2, LucideNotepadText, Merge, MousePointerClick, NotepadTextDashed, RotateCcw, Scan, Search, Settings2, Sheet, Shield, Signature, Split, Unlock } from "lucide-react";
+import { Archive, Droplet, Edit,  File,  FilePlus, FileText, FileTextIcon, Globe,  HashIcon, Image, Layers2, LucideNotepadText, Merge, MousePointerClick, NotepadTextDashed, RotateCcw, Scan, Search, Settings2, Sheet, Shield, Signature, Split, Unlock } from "lucide-react";
 
 const Tool = () => {
     const ToolsHref = [
@@ -23,7 +23,7 @@ const Tool = () => {
         {
           name: "PDF to Word",
           description: "Easily convert your PDF files into easy to edit DOC and DOCX documents.",
-          icon: <FileText />,
+          icon: <File/>,
           href: "https://www.ilovepdf.com/pdf_to_word"
         },
         {
@@ -152,18 +152,18 @@ const Tool = () => {
           </div>
           <div className="flex flex-wrap -m-4">
             {ToolsHref.map((tool, index) => (
-              <div key={index} className="p-4 md:w-1/3 border border-slate-500">
+              <div key={index} className="p-2 sm:w-1/2 md:w-1/3 lg:1/4">
                 <div className="flex rounded-lg h-full  p-8 flex-col group hover:shadow-2xl transition-all bg-white">
                   <div className="flex items-center mb-3">
-                    <div className="w-10 h-10 mr-3 inline-flex items-center justify-center rounded-full border-2 border-red-700 text-indigo-500 flex-shrink-0 group-hover:scale-110 transition-all">
+                    <div className="w-10 h-10 mr-3 inline-flex items-center justify-center rounded-full  text-primaryColor flex-shrink-0 group-hover:scale-110 transition-all">
                     {tool.icon?tool.icon:""}
                     </div>
                     <h2 className="text-gray-900 text-lg title-font font-medium">{tool.name}</h2>
                   </div>
                   <div className="flex-grow text-base flex flex:nowrap flex-col">
                     <p className="leading-relaxed text-base">{tool.description}</p>
-                    <a href={tool.href} className="text-indigo-500 font-bold hover:text-indigo-700 w-full h-full">
-                      <span className="inline-flex mt-6">Try Now &nbsp; <MousePointerClick /></span> 
+                    <a href={tool.href} className="text-indigo-500 font-bold group hover:text-indigo-700 w-full h-full">
+                      <span className="inline-flex mt-6">Try Now &nbsp; <MousePointerClick className="text-primaryColor group-hover:text-secondaryColor" /></span> 
                     </a>
                   </div>
                 </div>

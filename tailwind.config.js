@@ -6,14 +6,27 @@ export default {
   ],
   theme: {
     extend: {
-      color:{
-        backgroudColor:"#f7f5f2",
-        logo:"#E5252A",
-        red1:"#EF4444",
-        red2:"#e04826",
-        hoverColor:"#9C1B15",
-      }
+      colors: {
+        backgroundColor: "#f7f5f2",
+        primaryColor: "#E5252A",
+        secondaryColor: "#C5252A",
+        textColor: "#FDFFFC",
+        miniBlack: "#2A2B2A",
+        blackHover: "#706C61",
+        yellow: "#F2CD5D",
+        softPink: "#D7A6B3",
+         textGradient:"bg-gradient-to-r from-red-400 to-red-600"
+      },
     },
+    screens: {
+      'sm': '640px',
+      
+      'md': '768px',
+
+      'lg': '1024px',
+
+      'xl': '1280px',
+  },
   },
   plugins: [],
-}
+};
