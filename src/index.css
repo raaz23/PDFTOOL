@@ -80,8 +80,8 @@
 
 /*footer-social media*/
 .social-icon {
-  width: 24px; /* Set your desired width */
-  height: 24px; /* Set your desired height */
+  width: 40; /* Set your desired width */
+  height: 40px; /* Set your desired height */
 }
 
 
@@ -123,6 +123,21 @@
   }
   50% {
     transform: scaleY(1.8);
+  }
+}
+
+.MobileNavbar {
+  z-index: 999;
+  transition: all;
+  animation: navbar 0.5s ease-in-out;
+}
+
+@keyframes navbar {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 

@@ -163,7 +163,7 @@ const Tool = () => {
                   <div className="flex-grow text-base flex flex:nowrap flex-col">
                     <p className="leading-relaxed text-base">{tool.description}</p>
                     <a href={tool.href} className="text-indigo-500 font-bold group hover:text-indigo-700 w-full h-full">
-                      <span className="inline-flex mt-6">Try Now &nbsp; <MousePointerClick className="text-primaryColor group-hover:text-secondaryColor" /></span> 
+                      <span className="inline-flex mt-6">Try Now &nbsp; <MousePointerClick className="group-hover:text-secondaryColor" /></span> 
                     </a>
                   </div>
                 </div>

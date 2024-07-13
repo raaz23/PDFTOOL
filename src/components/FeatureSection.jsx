@@ -2,7 +2,7 @@ import { features } from "../constants";
 
 const FeatureSection = () => {
   return (
-    <div className=" mt-20 md:mt-32 px-4 relative min-h-[600px] bg-white">
+    <div className=" mt-20 md:mt-32 sm:px-4 relative min-h-[600px] bg-white" id="features">
       <div className="text-center pt-20">
       <h2 className="text-xs text-indigo tracking-widest font-medium title-font mb-1">FEATURES</h2>
         <h2 className="text-3xl font-medium title-font text-gray-900 lg:text-5xl tracking-wide">

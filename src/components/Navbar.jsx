@@ -6,10 +6,17 @@ import { navItems } from "../constants";
 
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+  const [click,setClick]=useState(false);
 
   const toggleNavbar = () => {
     setMobileDrawerOpen(!mobileDrawerOpen);
-  };
+  }
+
+  function handleClick(){
+    setClick(!click);
+    toggleNavbar();
+    setClick(false);
+  }
 
   return (
     <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80">
@@ -31,36 +38,41 @@ const Navbar = () => {
             Sign In
             </a>
             <a
-              href="#"
+              href="#pricing"
               className=" border-2 py-2 px-3 rounded-md bg-primaryColor transition-all hover:bg-secondaryColor text-textColor tracking-wider"
             >
            Try For Free
             </a>
           </div>
-          <div className="lg:hidden md:flex flex-col justify-end">
+          <div className="lg:hidden md:flex flex-col justify-end MobileNavbar transition-all">
             <button onClick={toggleNavbar}>
               {mobileDrawerOpen ? <X /> : <Menu />}
             </button>
           </div>
         </div>
         {mobileDrawerOpen && (
-          <div className="fixed mt-4 right-0 z-20 bg-red-500 w-full p-12 flex flex-col justify-center items-center lg:hidden">
+          <div className="MobileNavbar fixed mt-4 right-0 z-20 bg-red-500 w-full p-12 flex flex-col justify-center items-center lg:hidden">
             <ul>
               {navItems.map((item, index) => (
                 <li key={index} className="py-4 hover:underline underline-offset-8 text-white">
-                  <a href={item.href}>{item.label}</a>
+                  <a href={item.href}
+                  onClick={handleClick}
+                  >{item.label}</a>
                 </li>
               ))}
             </ul>
-            <div className="flex space-x-6">
-              <a href="#" className="py-2 px-3 border rounded-md bg-white">
+            <div className="flex space-x-6 mt-6 gap-6">
+              <a href="#" className="py-2 px-3 border rounded-md bg-white tracking-wider"
+              onClick={handleClick}
+              >
                 Sign In
               </a>
               <a
-                href="#"
-                className="py-2 px-3 rounded-md bg-gradient-to-r from-red-400 to-red-600 "
+                href="#pricing"
+                onClick={handleClick}
+                className="border-2 py-2 px-3 rounded-md bg-primaryColor transition-all hover:bg-secondaryColor text-textColor tracking-wider "
               >
-                Create an account
+                Try For Free
               </a>
             </div>
           </div>

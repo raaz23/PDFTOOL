@@ -1,21 +1,18 @@
-
 import PropTypes from 'prop-types';
-const Button = ({ label,link, icon }) => {
+
+const Button = ({ label, link, icon }) => {
     return (
-        <a className="btn" href={link}>{label} {icon}</a>
+        <a className="btn" href={link}>
+            {label} {icon}
+        </a>
     );
 };
 
 Button.propTypes = {
     label: PropTypes.string.isRequired,
-    link:PropTypes.string,
-    icon:PropTypes.component
+    link: PropTypes.string,
+    icon: PropTypes.element
 };
 
-Button.defaultProps = {
-    type: 'button',
-    link:"#",
-    icon:""
-};
 
 export default Button;

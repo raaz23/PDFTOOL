@@ -10,7 +10,7 @@ const Pricing = () => {
       id="pricing"
     >
       <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-col text-center w-full mb-20">
+        <div className="flex flex-col text-center">
           <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
             PLAN
           </h2>
@@ -43,7 +43,7 @@ const Pricing = () => {
             </button>
           </div>
         </div>
-        <div className="mt-16 space-y-6 justify-center gap-6 sm:grid sm:grid-cols-2 sm:space-y-0 lg:grid-cols-3">
+        <div className="mt-8 md:mt-16 space-y-6 justify-center gap-6 sm:grid sm:grid-cols-2 sm:space-y-0 lg:grid-cols-3">
           {plans.map((item, idx) => (
             <div
               key={idx}
@@ -53,7 +53,7 @@ const Pricing = () => {
                 <span className="text-indigo-500 font-medium">{item.name}</span>
                 <div className="absolute w-full h-full right-0 top-0">
                   {item.type && (
-                      <div className="absolute -top-10 right-6 w-32 h-10 object-contain"><img
+                      <div className="absolute w-16 h-6 right-6 -top-2 md:-top-10 md:right-2 md:w-32 md:h-10 sm:w-20 sm:right-4 sm:-top-6 sm:h-8 object-contain"><img
                         src="POPULAR.svg"
                         alt="Popular Image"
                         className="opacity-80"

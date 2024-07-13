@@ -1,5 +1,4 @@
 import { testimonials } from "../constants";
-import { Star } from "lucide-react";
 
 const Testimonials = () => {
   return (
@@ -24,7 +23,7 @@ const Testimonials = () => {
                 <div className="relative ml-[4.4rem] flex gap-2 top-6 " >
                   {[...Array(testimonial.starNumber)].map((_, i) => (
                     <span key={i} className="text-yellow-500 text-xs">
-                      <Star className="w-4 h-4 text-yellow" />
+                      <img src="star.svg" alt="star review" className="w-4 h-4 text-yellow" />
                     </span>
                   ))}
                 </div>

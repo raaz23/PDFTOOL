@@ -16,7 +16,7 @@ const HeroSection = () => {
       Every tool you need to use PDFs, at your fingertips. <br /> All are 100% FREE and easy to use! Merge, split, compress, convert, rotate, unlock and watermark PDFs with just a few clicks.
       </p>
       <div className="flex justify-center my-10 ">
-        <Button label={"Get Started"} link={"#"} icon={<MoveRight/>}/>
+        <Button label={"Get Started"} link={"#tools"} icon={<MoveRight/>}/>
         
       </div>
       <div className="flex flex-col mt-3 lg:mt-10 justify-center px-2">

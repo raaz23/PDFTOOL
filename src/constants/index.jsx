@@ -173,25 +173,24 @@ export const plans = [
 
 
 export const resourcesLinks = [
-  { href: "#", text: "Getting Started" },
-  { href: "#", text: "Documentation" },
-  { href: "#", text: "Tutorials" },
-  { href: "#", text: "API Reference" },
-  { href: "#", text: "Community Forums" },
+  { href: "#", text: "Home" },
+  { href: "#features", text: "Features" },
+  { href: "#pricing", text: "Pricing" },
+  { href: "#tools", text: "Tools" },
 ];
 
 export const platformLinks = [
-  { href: "#", text: "Features" },
-  { href: "#", text: "Supported Devices" },
-  { href: "#", text: "System Requirements" },
-  { href: "#", text: "Downloads" },
-  { href: "#", text: "Release Notes" },
+  { href: "https://www.ilovepdf.com/help/faq", text: "FAQ" },
+  { href: "https://www.ilovepdf.com/desktop", text: "iLovePDF Desktop" },
+  { href: "https://www.ilovepdf.com/mobile", text: "iLovePDF Mobile" },
+  { href: "https://www.iloveapi.com/", text: "Developers" },
+  { href: "https://wordpress.org/plugins/ilovepdf/", text: "Wordpress Plugin" },
 ];
 
 export const communityLinks = [
-  { href: "#", text: "Events" },
-  { href: "#", text: "Meetups" },
-  { href: "#", text: "Conferences" },
-  { href: "#", text: "Hackathons" },
-  { href: "#", text: "Jobs" },
+  { href: "https://www.iloveimg.com/", text: "IMG" },
+  { href: "https://www.ilovepdf.com/help/about", text: "Our Story" },
+  { href: "https://www.ilovepdf.com/blog", text: "Blog" },
+  { href: "https://www.ilovepdf.com/press", text: "Press" },
+  { href: "https://www.ilovepdf.com/help/legal", text: "Legal & Privacy" },
 ];
