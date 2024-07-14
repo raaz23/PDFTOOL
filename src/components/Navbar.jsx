@@ -51,7 +51,7 @@ const Navbar = () => {
           </div>
         </div>
         {mobileDrawerOpen && (
-          <div className="MobileNavbar fixed mt-4 right-0 z-20 bg-red-500 w-full p-12 flex flex-col justify-center items-center lg:hidden">
+          <div className="MobileNavbar fixed mt-4 right-0 z-20 bg-blackHover w-full p-12 flex flex-col justify-center items-center lg:hidden">
             <ul>
               {navItems.map((item, index) => (
                 <li key={index} className="py-4 hover:underline underline-offset-8 text-white">
@@ -59,6 +59,7 @@ const Navbar = () => {
                   onClick={handleClick}
                   >{item.label}</a>
                 </li>
+              
               ))}
             </ul>
             <div className="flex space-x-6 mt-6 gap-6">

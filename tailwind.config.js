@@ -7,13 +7,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        backgroundColor: "#f7f5f2",
+        secondBackgroundColor: "#F5F5FA",
         primaryColor: "#E5252A",
         secondaryColor: "#C5252A",
         textColor: "#FDFFFC",
         miniBlack: "#2A2B2A",
         blackHover: "#706C61",
-        yellow: "#F2CD5D",
+        yellowColor: "#F2CD5D",
         softPink: "#D7A6B3",
          textGradient:"bg-gradient-to-r from-red-400 to-red-600"
       },

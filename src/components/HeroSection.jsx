@@ -3,7 +3,8 @@ import Button from "../constants/button";
 
 const HeroSection = () => {
   return (
-    <div className="flex flex-col items-center mt-6 lg:mt-20" id="#">
+    <section className="">
+    <div className="flex flex-col items-center mt-6 lg:mt-20" id="#" >
       <h1 className="px-2 text-neutral-900 font-medium bg-clip-text text-2xl lg:text-5xl text-center tracking-widest ">
       Simplify Your PDF Tasks With Our 
         <span className="text-gradient">
@@ -33,6 +34,7 @@ const HeroSection = () => {
         <h3 className="text-center mt-8 font-bold flex justify-center gap-4 underline underline-offset-8"> <Tv/> demo video</h3>
       </div>
     </div>
+    </section>
   );
 };
 

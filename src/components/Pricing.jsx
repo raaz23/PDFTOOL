@@ -6,7 +6,7 @@ const Pricing = () => {
 
   return (
     <section
-      className="px-14 text-gray-600 body-font overflow-hidden bg-white"
+      className="px-6 md:px-14 text-gray-600 body-font overflow-hidden bg-secondBackgroundColor"
       id="pricing"
     >
       <div className="container px-5 py-24 mx-auto">
@@ -14,7 +14,7 @@ const Pricing = () => {
           <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
             PLAN
           </h2>
-          <h1 className="sm:text-4xl lg:text-6xl font-medium title-font mb-2 text-gray-900">
+          <h1 className="px-2 text-neutral-900 font-medium bg-clip-text text-2xl lg:text-5xl text-center tracking-widest">
             CHoose The Right{" "}
             <span className="bg-gradient-to-r from-red-400 to-red-800 text-transparent bg-clip-text">
               {" "}
@@ -24,10 +24,10 @@ const Pricing = () => {
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500 mt-6">
             All prices are here including free version
           </p>
-          <div className="flex mx-auto border-2 border-indigo-500 rounded overflow-hidden mt-6">
+          <div className="flex mx-auto border-2 border-red-500 rounded overflow-hidden mt-6">
             <button
               className={`py-1 px-4 ${
-                monthly ? "bg-indigo-500 text-white" : "text-indigo-500"
+                monthly ? "bg-red-500 text-white" : "text-miniBlack-500"
               } focus:outline-none`}
               onClick={() => setMonthly(true)}
             >
@@ -35,7 +35,7 @@ const Pricing = () => {
             </button>
             <button
               className={`py-1 px-4 ${
-                !monthly ? "bg-indigo-500 text-white" : "text-indigo-500"
+                !monthly ? "bg-red-500 text-white" : "text-miniBlack-500"
               } focus:outline-none`}
               onClick={() => setMonthly(false)}
             >
@@ -47,17 +47,15 @@ const Pricing = () => {
           {plans.map((item, idx) => (
             <div
               key={idx}
-              className="relative flex-1 flex items-stretch flex-col p-8 rounded-xl border-2 hover:shadow-2xl hover:transition-all"
+              className="relative flex-1 flex items-stretch flex-col p-8 rounded-xl border-2 hover:shadow-2xl hover:scale-[102%] transition-all overflow-hidden bg-white"
             >
               <div>
-                <span className="text-indigo-500 font-medium">{item.name}</span>
+                <span className="text-primaryColor font-medium tracking-widest">{item.name}</span>
                 <div className="absolute w-full h-full right-0 top-0">
                   {item.type && (
-                      <div className="absolute w-16 h-6 right-6 -top-2 md:-top-10 md:right-2 md:w-32 md:h-10 sm:w-20 sm:right-4 sm:-top-6 sm:h-8 object-contain"><img
-                        src="POPULAR.svg"
-                        alt="Popular Image"
-                        className="opacity-80"
-                      /></div>
+                      <div className="py-1 text-textColor w-full bg-red-500 absolute font-bold font-title tracking tracking-widest right-0 top-0 text-center "> 
+                        <span>POPULAR</span>
+                      </div>
                   )}
                 </div>
 
@@ -73,7 +71,7 @@ const Pricing = () => {
                   <li key={idx} className="flex items-center gap-5">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 text-indigo-600"
+                      className="h-5 w-5 text-primaryColor"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -88,7 +86,7 @@ const Pricing = () => {
                 ))}
               </ul>
               <div className="flex-1 flex items-end cursor-pointer ">
-                <button className={`z-10 cursor-pointer px-3 py-3 rounded-lg w-full  font-medium tracking-wider text-sm duration-150 text-white ${item.type?`bg-primaryColor`:`bg-indigo-600`} ${item.type?`hover:bg-red-700`:`hover:bg-indigo-700`} ${item.type?`active:bg-red-700`:`active:bg-indigo-700`}`}>
+                <button className={`z-10 cursor-pointer px-3 py-3 rounded-lg w-full  font-medium tracking-wider text-sm duration-150 text-white bg-red-500 hover:bg-primaryColor`}>
                   Get Started
                 </button>
               </div>

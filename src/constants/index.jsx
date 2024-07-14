@@ -27,44 +27,44 @@ export const navItems = [
 
 export const testimonials = [
   {
-    user: "DIRECTOR - Rahul Gupta",
-    company: "TechSavvy India",
+    user: "Rahul Gupta",
+    company: "DIRECTOR - TechSavvy India",
     starNumber:4,
     image: user1,
     text: "I am extremely impressed with PDFTOOL's services. The platform's intuitive design and seamless functionality make it a must-have for anyone dealing with PDF files.",
   },
   {
-    user: "UI/UX DESIGNER - Anjali Sharma",
-    company: "Digital Bharat",
-    starNumber:2,
+    user: "Anjali Sharma",
+    company: "UI/UX DESIGNER - Digital Bharat",
+    starNumber:5,
     image: user2,
     text: "PDFTOOL has been a game-changer for us. It simplifies complex tasks like merging and converting PDFs into quick, easy steps. Highly recommended and i suggest to use it!",
   },
   {
-    user: "CTO - Sanjay Patel",
-    company: "TechGenius Solutions",
+    user: "Sanjay Patel",
+    company: "CTO - TechGenius Solutions",
     starNumber:5,
     image: user3,
     text: "Working with PDFTOOL has been a delight. Their commitment to quality and user-friendly interface sets them apart. They truly understand the needs of Indian users.",
   },
   {
-    user: "SOFTWARE ENG - Anish Verma",
-    company: "Innovate India Tech",
-    starNumber:2,
+    user: "Anish Verma",
+    company: "SOFTWARE ENG - Innovate India Tech",
+    starNumber:4,
     image: user4,
-    text: "PDFTOOL has revolutionized how we manage documents. The tools are robust, efficient, and perfect for businesses looking to streamline their document workflows.",
+    text: "PDFTOOL has revolutionized how we manage documents. The tools are robust, efficient, and perfect for businesses.",
   },
   {
-    user: "CEO - Amit Kumar",
-    company: "SmartSoft India",
-    starNumber:3,
+    user: "Amit Kumar",
+    company: "CEO - SmartSoft India",
+    starNumber:5,
     image: user5,
     text: "I've found PDFTOOL incredibly helpful in my daily tasks. Whether it's compressing PDFs or extracting pages, it's a versatile tool that meets all our document needs.",
   },
   {
-    user: "HR - Priyanka Singh",
-    company: "TechInnovate Labs",
-    starNumber:4,
+    user: "Priyanka Singh",
+    company: "HR - TechInnovate Labs",
+    starNumber:3,
     image: user6,
     text: "The team behind PDFTOOL deserves applause for their dedication to improving document management. Their tools are indispensable for professionals across India.",
   },
@@ -125,7 +125,7 @@ export const checklistItems = [
 
 export const plans = [
   {
-    name: "Free",
+    name: "Free plan",
     mPrice: 0,
     yPrice:0,
     features: [
@@ -138,7 +138,7 @@ export const plans = [
     ],
   },
   {
-    name: "Pro",
+    name: "Pro plan",
     mPrice: 12,
     yPrice:48,
     features: [
@@ -153,7 +153,7 @@ export const plans = [
     type:"popular"
   },
   {
-    name: "Business",
+    name: "Business plan",
     mPrice: 40,
     yPrice:120,
     features: [
