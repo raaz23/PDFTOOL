@@ -13,9 +13,9 @@
             </span>
           </h2>
         </div>
-        <div className="px-8 md:10 md:px-14 flex flex-wrap mt-12 lg:mt-20">
+        <div className="px-4 md:10 md:px-14 flex flex-wrap mt-12 lg:mt-20">
           {features.map((feature, index) => (
-            <div key={index} className="p-2 sm:w-1/2 md:w-1/3 lg:1/4 mb-8">
+            <div key={index} className="p-2 sm:w-1/2 md:w-1/3 lg:1/4 mb-2">
               <div className="flex bg-white p-6 rounded-lg shadow-md h-full">
                 <div className="flex flex-shrink-0 h-12 w-12 p-2 text-primaryColor justify-center items-center rounded-full bg-gray-100">
                   {feature.icon}

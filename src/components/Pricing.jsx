@@ -52,7 +52,7 @@ const Pricing = () => {
             >
               {item.type && (
                 <div className="absolute w-full h-full right-0 top-0">
-                  <div className="py-1 text-textColor w-full bg-red-500 absolute font-bold font-title tracking tracking-widest right-0 top-0 text-center">
+                  <div className="py-1 text-textColor bg-red-500 absolute font-bold font-title tracking tracking-widest right-3 top-3 px-4 rounded-lg text-center">
                     <span>POPULAR</span>
                   </div>
                 </div>
