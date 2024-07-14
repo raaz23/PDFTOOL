@@ -2,8 +2,9 @@
 
   const FeatureSection = () => {
     return (
-      <div className="mt-20 px-4 relative min-h-[600px] bg-secondBackgroundColor" id="features">
-        <div className="text-center pt-20">
+      <section id="features" className="min-h-[600px] bg-secondBackgroundColor">
+      <div className="relative py-16 lg:py-20 px-6 " >
+        <div className="text-center">
           <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">FEATURES</h2>
           <h2 className="px-2 text-neutral-900 font-medium bg-clip-text text-2xl lg:text-5xl text-center tracking-widest">
             Easily Build{" "}
@@ -30,6 +31,7 @@
           ))}
         </div>
       </div>
+      </section>
     );
   };
 

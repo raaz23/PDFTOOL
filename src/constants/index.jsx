@@ -7,6 +7,12 @@ import {
   FastForward,
   FilePlus,
   PrinterCheck,
+  Home,
+  Hammer,
+  CircleDollarSign,
+
+  UserRoundCog,
+  Handshake,
 } from "lucide-react";
 
 import user1 from "../assets/profile-pictures/user1.jpg";
@@ -18,11 +24,11 @@ import user6 from "../assets/profile-pictures/user6.jpg";
 
 
 export const navItems = [
-  { label: "Home", href: "#" },
-  { label: "Tools", href: "#tools" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "#", icon:<Home/> },
+  { label: "Tools", href: "#tools" , icon:<Hammer/>},
+  { label: "Pricing", href: "#pricing", icon:<CircleDollarSign/> },
+  { label: "About", href: "#about" , icon:<UserRoundCog />},
+  { label: "Contact", href: "#contact" , icon:<Handshake /> },
 ];
 
 export const testimonials = [

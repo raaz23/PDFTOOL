@@ -6,8 +6,8 @@ const Pricing = () => {
 
   return (
     <section
-      className="px-6 md:px-14 text-gray-600 body-font overflow-hidden bg-secondBackgroundColor"
       id="pricing"
+      className="px-6 md:px-14 text-gray-600 body-font overflow-hidden bg-secondBackgroundColor"
     >
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center">
@@ -15,9 +15,8 @@ const Pricing = () => {
             PLAN
           </h2>
           <h1 className="px-2 text-neutral-900 font-medium bg-clip-text text-2xl lg:text-5xl text-center tracking-widest">
-            CHoose The Right{" "}
+            Choose The Right{" "}
             <span className="bg-gradient-to-r from-red-400 to-red-800 text-transparent bg-clip-text">
-              {" "}
               Plan For You
             </span>
           </h1>
@@ -30,6 +29,7 @@ const Pricing = () => {
                 monthly ? "bg-red-500 text-white" : "text-miniBlack-500"
               } focus:outline-none`}
               onClick={() => setMonthly(true)}
+              aria-current={monthly ? "page" : undefined}
             >
               Monthly
             </button>
@@ -38,6 +38,7 @@ const Pricing = () => {
                 !monthly ? "bg-red-500 text-white" : "text-miniBlack-500"
               } focus:outline-none`}
               onClick={() => setMonthly(false)}
+              aria-current={!monthly ? "page" : undefined}
             >
               Annually
             </button>
@@ -49,16 +50,17 @@ const Pricing = () => {
               key={idx}
               className="relative flex-1 flex items-stretch flex-col p-8 rounded-xl border-2 hover:shadow-2xl hover:scale-[102%] transition-all overflow-hidden bg-white"
             >
-              <div>
-                <span className="text-primaryColor font-medium tracking-widest">{item.name}</span>
+              {item.type && (
                 <div className="absolute w-full h-full right-0 top-0">
-                  {item.type && (
-                      <div className="py-1 text-textColor w-full bg-red-500 absolute font-bold font-title tracking tracking-widest right-0 top-0 text-center "> 
-                        <span>POPULAR</span>
-                      </div>
-                  )}
+                  <div className="py-1 text-textColor w-full bg-red-500 absolute font-bold font-title tracking tracking-widest right-0 top-0 text-center">
+                    <span>POPULAR</span>
+                  </div>
                 </div>
-
+              )}
+              <div>
+                <span className="text-primaryColor font-medium tracking-widest">
+                  {item.name}
+                </span>
                 <div className="mt-4 text-gray-800 text-3xl font-semibold">
                   ${monthly ? item.mPrice : item.yPrice}{" "}
                   <span className="text-xl text-gray-600 font-normal">
@@ -85,8 +87,8 @@ const Pricing = () => {
                   </li>
                 ))}
               </ul>
-              <div className="flex-1 flex items-end cursor-pointer ">
-                <button className={`z-10 cursor-pointer px-3 py-3 rounded-lg w-full  font-medium tracking-wider text-sm duration-150 text-white bg-red-500 hover:bg-primaryColor`}>
+              <div className="flex-1 flex items-end">
+                <button className="z-10 cursor-pointer px-3 py-3 rounded-lg w-full font-medium tracking-wider text-sm duration-150 text-white bg-red-500 hover:bg-primaryColor">
                   Get Started
                 </button>
               </div>

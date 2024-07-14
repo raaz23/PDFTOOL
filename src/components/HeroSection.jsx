@@ -3,8 +3,8 @@ import Button from "../constants/button";
 
 const HeroSection = () => {
   return (
-    <section className="">
-    <div className="flex flex-col items-center mt-6 lg:mt-20" id="#" >
+    <section className="hero py-16 lg:py-20" id="#">
+    <div className="flex flex-col items-center">
       <h1 className="px-2 text-neutral-900 font-medium bg-clip-text text-2xl lg:text-5xl text-center tracking-widest ">
       Simplify Your PDF Tasks With Our 
         <span className="text-gradient">
@@ -27,6 +27,7 @@ const HeroSection = () => {
           muted
           controls
           className="rounded-lg w-full border border-red-700 shadow-sm shadow-red-400"
+          alt="PDFTool Demo Video"
         >
           <source src="videoplayback.mp4" type="video/mp4" />
           Your browser does not support the video tag.
