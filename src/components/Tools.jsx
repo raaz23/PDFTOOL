@@ -144,15 +144,15 @@ const Tool = () => {
       ];
     
     return (
-      <section className="px-8 text-gray-600 body-font border-neutral-800"  id='tools'>
-        <div className="container mt-20 mb-20 mx-auto">
-          <div className="flex flex-col text-center w-full mb-20">
+      <section className="px-6 text-gray-600 body-font border-neutral-800"  id='tools'>
+        <div className="container py-16 lg:py-20 mx-auto">
+          <div className="flex flex-col text-center w-full">
             <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">PDF TOOLS</h2>
             <h1 className="px-2 text-neutral-900 font-medium bg-clip-text text-2xl lg:text-5xl text-center tracking-widest">Enhance Your <span className='bg-gradient-to-r from-red-500 to-red-800 text-transparent bg-clip-text'> PDF Workflow</span></h1>
           </div>
-          <div className="flex flex-wrap -m-4">
+          <div className="flex flex-wrap mt-12 lg:mt-20">
             {ToolsHref.map((tool, index) => (
-              <div key={index} className="p-2 sm:w-1/2 md:w-1/3 lg:1/4">
+              <div key={index} className="p-2 py-4 sm:w-1/2 md:w-1/3 lg:1/4">
                 <div className="flex rounded-lg h-full  p-8 flex-col group hover:shadow-2xl transition-all bg-secondBackgroundColor hover:bg-white">
                   <div className="flex items-center mb-3">
                     <div className="w-10 h-10 mr-3 inline-flex items-center justify-center rounded-full  text-primaryColor flex-shrink-0 group-hover:scale-110 transition-all">

@@ -55,8 +55,8 @@ const Navbar = () => {
             <ul>
               {navItems.map((item, index) => (
                 <li key={index} className="py-4 hover:underline underline-offset-8 text-black">
-                  <div className="flex justify-start gap-2">
-                  <div className="flex flex-shrink-0 h-8 w-8 p-2 text-primaryColor justify-center items-center rounded-full bg-gray-100">{item.icon}</div>
+                  <div className="flex justify-start">
+                  <div className="flex flex-shrink-0 h-6 w-8 p-2 text-primaryColor justify-center items-center rounded-full">{item.icon}</div>
                   <a href={item.href} onClick={handleClick}>{item.label}</a>
                 </div>
                   

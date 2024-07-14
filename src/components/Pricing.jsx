@@ -7,9 +7,9 @@ const Pricing = () => {
   return (
     <section
       id="pricing"
-      className="px-6 md:px-14 text-gray-600 body-font overflow-hidden bg-secondBackgroundColor"
+      className="px-6 py-16 lg:py-20 mx-auto text-gray-600 body-font overflow-hidden bg-secondBackgroundColor"
     >
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container mx-auto">
         <div className="flex flex-col text-center">
           <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
             PLAN
@@ -44,7 +44,7 @@ const Pricing = () => {
             </button>
           </div>
         </div>
-        <div className="mt-8 md:mt-16 space-y-6 justify-center gap-6 sm:grid sm:grid-cols-2 sm:space-y-0 lg:grid-cols-3">
+        <div className="mt-12 lg:mt-20 space-y-6 justify-center sm:grid sm:grid-cols-2 sm:space-y-0 lg:grid-cols-3">
           {plans.map((item, idx) => (
             <div
               key={idx}

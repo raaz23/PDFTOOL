@@ -2,8 +2,8 @@ import { testimonials } from "../constants";
 
 const Testimonials = () => {
   return (
-    <section className="mb-8">
-      <div className="max-w-7xl mx-auto py-8 px-6 tracking-wide mt-8">
+    <section className="py-16 lg:py-20 mx-auto">
+      <div className="px-6 tracking-wide">
         <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font text-center mb-1">
           TESTIMONIALS
         </h2>
@@ -13,9 +13,9 @@ const Testimonials = () => {
             About Us
           </span>
         </h2>
-        <div className="flex flex-wrap justify-center mt-16">
+        <div className="flex flex-wrap justify-center mt-12 lg:mt-20">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-4 py-3 group hover">
+            <div key={index} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 py-4 group hover">
               <div className="text-black rounded-md p-6 shadow-xl relative border-2">
                 <div className="absolute top-6 left-6 flex gap-1">
                   {[...Array(testimonial.starNumber)].map((_, i) => (
