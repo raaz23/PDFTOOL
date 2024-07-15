@@ -51,10 +51,10 @@ const Navbar = () => {
           </div>
         </div>
         {mobileDrawerOpen && (
-          <div className="MobileNavbar fixed mt-4 left-0 z-20 bg-white shadow-xl w-96  p-12 flex flex-col justify-center items-center lg:hidden">
+          <div className="MobileNavbar fixed mt-4 left-0 z-20 bg-white shadow-2xl w-full  p-12 flex flex-col justify-center items-center lg:hidden">
             <ul>
               {navItems.map((item, index) => (
-                <li key={index} className="py-4 hover:underline underline-offset-8 text-black">
+                <li key={index} className="py-4 -ml-2 hover:underline underline-offset-8 text-black">
                   <div className="flex justify-start">
                   <div className="flex flex-shrink-0 h-6 w-8 p-2 text-primaryColor justify-center items-center rounded-full">{item.icon}</div>
                   <a href={item.href} onClick={handleClick}>{item.label}</a>
@@ -63,13 +63,13 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-            <div className="flex space-x-6 mt-6 gap-6">
-              <a href="#" className="py-2 px-3 border rounded-md bg-white tracking-wider" onClick={handleClick}>
+            <div className="flex space-x-6 mt-6 gap-12">
+              <a href="#" className="py-2 px-4 border rounded-md bg-white tracking-wider" onClick={handleClick}>
                 Sign In
               </a>
               <a
                 href="#pricing"
-                className="border-2 py-2 px-3 rounded-md bg-primaryColor transition-all hover:bg-secondaryColor text-textColor tracking-wider"
+                className="border-2 py-2 px-4 rounded-md bg-primaryColor transition-all hover:bg-secondaryColor text-textColor tracking-wider"
                 onClick={handleClick}
               >
                 Try For Free

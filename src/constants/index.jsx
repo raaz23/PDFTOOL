@@ -51,14 +51,14 @@ export const testimonials = [
     company: "CTO - TechGenius Solutions",
     starNumber:5,
     image: user3,
-    text: "Working with PDFTOOL has been a delight. Their commitment to quality and user-friendly interface sets them apart. They truly understand the needs of Indian users.",
+    text: "Working with PDFTOOL has been a delight. Their commitment to quality and user-friendly interface sets them apart. They truly understand the needs of Indian users. Awesome Tools.",
   },
   {
     user: "Anish Verma",
     company: "SOFTWARE ENG - Innovate India Tech",
     starNumber:4,
     image: user4,
-    text: "PDFTOOL has revolutionized how we manage documents. The tools are robust, efficient, and perfect for businesses.",
+    text: "PDFTOOL has revolutionized how we manage documents. The tools are robust, efficient, and perfect for businesses. A great platform i found on internet.",
   },
   {
     user: "Amit Kumar",
@@ -70,9 +70,9 @@ export const testimonials = [
   {
     user: "Priyanka Singh",
     company: "HR - TechInnovate Labs",
-    starNumber:3,
+    starNumber:5,
     image: user6,
-    text: "The team behind PDFTOOL deserves applause for their dedication to improving document management. Their tools are indispensable for professionals across India.",
+    text: "The team behind PDFTOOL deserves applause for their dedication to improving document management.High recommended.",
   },
 ];
 

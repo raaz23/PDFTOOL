@@ -11,15 +11,15 @@ const Pricing = () => {
     >
       <div className="container mx-auto">
         <div className="flex flex-col text-center">
-          <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
+          <h3 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
             PLAN
-          </h2>
-          <h1 className="px-2 text-neutral-900 font-medium bg-clip-text text-2xl lg:text-5xl text-center tracking-widest">
+          </h3>
+          <h2 className="px-2 text-neutral-900 font-medium bg-clip-text text-2xl lg:text-5xl text-center tracking-widest">
             Choose The Right{" "}
             <span className="bg-gradient-to-r from-red-400 to-red-800 text-transparent bg-clip-text">
               Plan For You
             </span>
-          </h1>
+          </h2>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500 mt-6">
             All prices are here including free version
           </p>
@@ -44,15 +44,15 @@ const Pricing = () => {
             </button>
           </div>
         </div>
-        <div className="mt-12 lg:mt-20 space-y-6 justify-center sm:grid sm:grid-cols-2 sm:space-y-0 lg:grid-cols-3">
+        <div className="mt-12 lg:mt-20 gap-6 grid sm:grid-cols-2 lg:grid-cols-3">
           {plans.map((item, idx) => (
             <div
               key={idx}
-              className="relative flex-1 flex items-stretch flex-col p-8 rounded-xl border-2 hover:shadow-2xl hover:scale-[102%] transition-all overflow-hidden bg-white"
+              className="relative flex flex-col p-8 rounded-xl border-2 hover:shadow-2xl hover:scale-[102%] transition-all overflow-hidden bg-white"
             >
               {item.type && (
                 <div className="absolute w-full h-full right-0 top-0">
-                  <div className="py-1 text-textColor bg-red-500 absolute font-bold font-title tracking tracking-widest right-3 top-3 px-4 rounded-lg text-center">
+                  <div className="py-1 text-textColor bg-red-500 absolute font-bold font-title tracking-widest right-3 top-3 px-4 rounded-lg text-center">
                     <span>POPULAR</span>
                   </div>
                 </div>
@@ -68,7 +68,7 @@ const Pricing = () => {
                   </span>
                 </div>
               </div>
-              <ul className="py-8 space-y-3">
+              <ul className="py-8 space-y-3 ">
                 {item.features.map((featureItem, idx) => (
                   <li key={idx} className="flex items-center gap-5">
                     <svg

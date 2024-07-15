@@ -147,8 +147,8 @@ const Tool = () => {
       <section className="px-6 text-gray-600 body-font border-neutral-800"  id='tools'>
         <div className="container py-16 lg:py-20 mx-auto">
           <div className="flex flex-col text-center w-full">
-            <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">PDF TOOLS</h2>
-            <h1 className="px-2 text-neutral-900 font-medium bg-clip-text text-2xl lg:text-5xl text-center tracking-widest">Enhance Your <span className='bg-gradient-to-r from-red-500 to-red-800 text-transparent bg-clip-text'> PDF Workflow</span></h1>
+            <h3 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">PDF TOOLS</h3>
+            <h2 className="px-2 text-neutral-900 font-medium bg-clip-text text-2xl lg:text-5xl text-center tracking-widest">Enhance Your <span className='bg-gradient-to-r from-red-500 to-red-800 text-transparent bg-clip-text'> PDF Workflow</span></h2>
           </div>
           <div className="flex flex-wrap mt-12 lg:mt-20">
             {ToolsHref.map((tool, index) => (

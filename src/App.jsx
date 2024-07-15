@@ -6,7 +6,7 @@ import Pricing from "./components/Pricing";
 import Testimonials from "./components/Testimonials";
 import Tool from "./components/Tools";
 import LoadingSpinner from './loadingSpinner';
-import Workflow from "./components/Workflow"
+import CTA from "./components/CTA"
 import { useEffect, useState } from "react";
 
 const App = () => {
@@ -29,7 +29,7 @@ const App = () => {
           <Tool />
           <Pricing />
           <Testimonials />
-          <Workflow/>
+          <CTA/>
           <Footer />
         </>
       )}
