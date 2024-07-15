@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-secondBackgroundColor py-8">
-      <div className="container mx-auto flex flex-col md:flex-row gap-8 px-10 md:px-14">
+      <div className="container mx-auto flex justify-center flex-col md:flex-row gap-8 px-10 md:px-14">
         <div className="md:flex-1">
           <h3 className="text-md font-bold tracking-wider mb-4">Resources</h3>
           <ul className="space-y-2">
@@ -62,9 +62,7 @@ const Footer = () => {
             <span className="font-bold text-miniBlack">Email: </span>
             yadavraj1244@gmail.com
           </h3>
-          <p className="text-md font-bold text-miniBlack">
-            © {getCurrentYear()} All Rights Reserved
-          </p>
+          <p className="text-md font-bold text-miniBlack">© {getCurrentYear()} All Rights Reserved</p>
         </div>
 
         <div className="flex gap-6 justify-center md:justify-end mt-4 md:mt-0">
@@ -87,7 +85,7 @@ const Footer = () => {
             className="hover:scale-110 transition-all"
             aria-label="LinkedIn"
           >
-            <img className="social-icon" src="linkedin.svg" alt="LinkedIn" />
+            <img className="social-icon" src="linkedin..svg" alt="LinkedIn" />
           </a>
           <a
             href="https://linktr.ee/raaz23"

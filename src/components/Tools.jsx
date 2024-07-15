@@ -152,7 +152,7 @@ const Tool = () => {
           </div>
           <div className="flex flex-wrap mt-12 lg:mt-20">
             {ToolsHref.map((tool, index) => (
-              <div key={index} className="p-2 py-4 sm:w-1/2 md:w-1/3 lg:1/4">
+              <div key={index} className="p-2 w-full md:w-1/2 lg:w-1/3 px-4 py-4">
                 <div className="flex rounded-lg h-full  p-8 flex-col group hover:shadow-2xl transition-all bg-secondBackgroundColor hover:bg-white">
                   <div className="flex items-center mb-3">
                     <div className="w-10 h-10 mr-3 inline-flex items-center justify-center rounded-full  text-primaryColor flex-shrink-0 group-hover:scale-110 transition-all">
